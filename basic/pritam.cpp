@@ -1,18 +1,11 @@
-#include <bits/stdc++.h>
-using namespace std;
-
-int sumFunction(int a, int b)
-{
-    return a + b;
-}
-
-int main()
-{
-   
-    int a,b,c;
-    c = sumFunction(a, b);
-
-   //  cout << c;
-
-    return 0;
-}
+#include<iostream>
+using namespace std ;
+ int main(){
+    cout << sizeof(int)<<endl ;
+    cout << sizeof(float)<<endl ;
+    cout << sizeof(double)<<endl ;
+    cout << sizeof(char)<<endl ;
+    cout << sizeof(bool)<<endl ;
+    cout << sizeof(long)<<endl ;
+    cout << sizeof(long int)<<endl ;
+ }

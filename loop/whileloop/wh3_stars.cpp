@@ -2,9 +2,9 @@
 using namespace std;
 int main()
 {
-    int n;
-    cout << "Enter n" << endl;
-    cin >> n;
+    // int n;
+    // cout << "Enter n" << endl;
+    // cin >> n;
 
     // for (int i = 1; i <= n; i++)
     // {
@@ -95,94 +95,80 @@ int main()
     // d d d d
     // e e e e e
 
-    // for (int row = 1; row <= n; row++)
+    // for (int i = 1; i <= 5; i++)
     // {
-    //     for (int col = 1; col <= n - row; col++)
+    //     for (int j = 5; j >= i; j--)
     //     {
-    //         cout << " ";
+    //         cout << "*";
     //     }
-    //     for (int col = row; col >= 1; col--)
-    //     {
-
-    //         cout << col;
-    //     }
-    //     // cout << " ";
-
     //     cout << endl;
     // }
 
-    //       1
-    //    21
-    //   321
-    //  4321
-    // 54321
+    //    *****
+    // ****
+    // ***
+    // **
 
-    // for (int row = 1; row <= n; row++)
+    // for (int row = 1; row <= 5; row++)
     // {
-    //     for (int col = 1; col <= n - row; col++)
+    //     for (int col = 1; col <= 5 - row; col++)
     //     {
     //         cout << " ";
     //     }
-    //     for (int col = 1; col <= 2 * row - 1; col++)
+    //     for (int j = 1; j <= row; j++)
     //     {
-    //         cout << col;
+    //         cout << " * ";
     //     }
-
     //     cout << endl;
     // }
 
-    //           *
-    //          ***
-    //         *****
-    //        *******
-    //       *********
-    //      ***********
-
-    // for (int row = 1; row <= n; row++)
+    //     *
+    //    **
+    //   ***
+    //  ****
+    // *****
+    // for (int row = 1; row <= 5; row++)
     // {
-    //     for (int col = 1; col <= n - row; col++)
+    //     for (int col = 1; col <= 5 - row; col++)
     //     {
     //         cout << " ";
     //     }
     //     for (int col = 1; col <= row; col++)
     //     {
-    //         cout << col;
+    //         cout << " * ";
     //     }
-    //     for (int col = row - 1; col >= 1; col--)
-    //     {
-    //         c out << col;
-    //     }
-
     //     cout << endl;
     // }
 
-    //      1
-    //     121
-    //    12321
-    //   1234321
-    //  123454321
-    // 12345654321
+    //     1
+    //    12
+    //   123
+    //  1234
+    // 12345
+    // char charr = 97;
 
-    for (int row = 1; row <= n; row++)
+    for (int row = 1; row <= 5; row++)
     {
-        for (int col = n; col >= 1; col--)
-        {
-            cout << "*";
-        }
-        for (int spa = row - 1; spa <= n - 1; spa++)
+        for (int col = 1; col <= 2*(5 - row)-1; col++)
         {
             cout << " ";
+            
+        }
+        for (int k = 1;  k <= row; k++)
+        {
+            cout<<"*";
+            // cout << charr; 
+            // charr++;
         }
 
         cout << endl;
     }
 
-    //      1
-    //     121
-    //    12321
-    //   1234321
-    //  123454321
-    // 12345654321
+    //     *
+    //    **
+    //   ***
+    //  ****
+    // *****
 
     return 0;
 }

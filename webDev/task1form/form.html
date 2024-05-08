@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form's</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(215, 223, 255);
+       }
+
+        label{
+             
+             margin-left: 50px;
+             margin-top: 15px;
+             margin-bottom: 5px;
+             font-size: 18px;
+        }
+
+        input{
+            align-self: center;
+            font-size: medium;
+            border: solid 1px rgb(0, 13, 255);
+            padding: 10px;
+            width: 300px;
+            height: 25px;
+            border-radius: 25px;
+            background-color: rgb(239, 239, 255);
+        }
+        input:hover{
+            border: solid 2px rgb(0, 13, 255);
+            }
+
+        button{
+            border: solid 1px rgb(0, 13, 255);
+            width: 300px;
+            height: 45px;
+            align-self: center;
+            margin-top: 12px;
+            background-color: blue;
+            border-radius: 34px;
+            border-color: blue;
+            color: white;
+            font-size: large;
+            transition: 0.5s;
+            margin-bottom: -30px;
+            box-shadow: 5px 10px 8px #888888;
+           box-shadow: 5px 10px 10px #5858fa;
+
+         }
+
+    
+         button:hover{
+            background-color: rgb(255, 255, 255);
+            color:blue;
+            border-color: blue;
+            width: 250px;
+           
+            
+         }
+
+        div{
+            width: 400px;
+            height: 50%px;
+            padding: 12px;
+            margin: 40px;
+            border: solid 1px rgb(0, 13, 255);
+            background-color: #e0f4ff;
+            display: flex;
+            align-items: left;
+            flex-direction: column;
+            transition: 1s;
+            border-radius: 10px;
+            box-shadow: 5px 10px 10px #5858fa;
+        }
+        div:hover
+        {
+            background-color: rgb(255, 255, 255);
+            width: 420px;
+            height: 60%;
+
+        }
+
+        h2{
+            
+           color: blue; 
+           align-self: center; 
+           color: white;
+           background-color: blue;
+           border-radius: 34px;
+           padding-left: 30px;
+           padding-right: 30px;
+           padding-top: 10px;
+           padding-bottom: 10px;
+           margin: 0px;
+           
+        }
+        span{
+            font-size: 20px;
+        }
+           
+        p{
+            font-size: 20px;
+        }
+
+
+    </style>
+</head>
+<body >
+    <hello>
+        <div>
+            <h2 >Details Forms</h2>
+            <label>Enter First Name:</label>
+            <input id="fname" placeholder="First Name" required />
+
+            <label>Enter Last Name:</label>
+            <input id="lname" placeholder="Last Name" />
+
+             <label >Enter Date of Birth:</label>
+            <input id="dob" type="date" placeholder="DOB" />
+
+             <label>Enter Class:</label>
+            <input id="classs" placeholder="Class" />
+
+            <label>Mobile Number:</label>
+            <input id="mob" type="number" placeholder="Mobile Number" />
+             
+            <button onclick=submit()>Submit</button>
+        </div>
+
+    </hello>
+    <div>
+        <h2>You Entered Details:</h2>
+        <p><b>Full Name:</b> <span id="fdname" ></span><span id="ldname" ></span></p>
+        <p><b>Dob Name:</b> <span id="ddob" ></span></p>
+        <p><b>Class Name:</b> <span id="dclass" ></span></p>
+        <p><b>Mobile Name:</b> <span id="dmob"></span></p>
+    </div>
+
+   <script> 
+    const form = document.querySelector('form');
+ 
+    function submit() { 
+ 
+         let fname = document.getElementById("fname").value;
+         let lname = document.getElementById("lname").value; 
+         let dob = document.getElementById("dob").value; 
+         let classs = document.getElementById("classs").value; 
+         let mob = document.getElementById("mob").value; 
+
+         document.getElementById("fdname").innerHTML  = fname;
+         document.getElementById("ldname").innerHTML  = lname;
+         document.getElementById("ddob").innerHTML  = dob;
+         document.getElementById("dclass").innerHTML  = classs;
+         document.getElementById("dmob").innerHTML  = mob;
+
+         
+         
+
+     }
+
+ 
+</script>
+
+ 
+</body>
+</html>
